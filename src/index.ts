@@ -44,7 +44,7 @@ sectionMoney.innerHTML = `
   </ul>
   <div class="control-box">
     <div class="balance"></div>
-    <button class="btn"><img src="partner.svg" alt="Partner">Стать партнером</button>
+    <button class="btn"><span><img src="partner.svg" alt="Partner">Стать партнером</span></button>
   </div>
 `;
 
