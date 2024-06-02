@@ -20,8 +20,6 @@ body
   margin: auto
 
 .section-money
-  max-width: 1281px
-  width: 100%
   margin: auto
 
 .section-money__title
@@ -34,23 +32,32 @@ body
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 
 .list
+  position: relative
   display: flex
   gap: 8px
   list-style-type: none
+  margin: 0
+  padding: 4px
+  width: fit-content
+  box-shadow: 0px 24px 48px rgba(23, 43, 151, 0.72)
+  border: 4px solid transparent
+  background: linear-gradient(rgba(107, 125, 222, 0.12) 0%, #2921A5 100%) padding-box, linear-gradient(180deg, rgb(202, 207, 239), rgb(106, 119, 195)) border-box
+  border-radius: 24px
 
 .list__item
   width: 419px
   height: 352px
+  border: 2px solid transparent
   border-radius: 20px
 
 .list__item:nth-of-type(1)
-  background: linear-gradient(180deg, #6377E1 0%, #2920A5 100%)
+  background: linear-gradient(#6377E1 0%, #2920A5 100%) padding-box, linear-gradient(180deg, rgb(149, 162, 235), rgb(71, 94, 223)) border-box
 
 .list__item:nth-of-type(2)
-  background: linear-gradient(180deg, #E163E1 0%, #741595 100%)
-
+  background: linear-gradient(#E163E1 0%, #741595 100%) padding-box, linear-gradient(180deg, rgb(235, 149, 235), rgb(177, 71, 223)) border-box
+  
 .list__item:nth-of-type(3)
-  background: linear-gradient(180deg, #55CE00 0%, #014D1D 100%)
+  background: linear-gradient(#55CE00 0%, #014D1D 100%) padding-box, linear-gradient(180deg, rgb(140, 222, 83), rgb(58, 130, 7)) border-box
 
 *::-webkit-scrollbar
   width: 5px
