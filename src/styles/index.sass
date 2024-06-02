@@ -3,6 +3,8 @@
 html
   scroll-behavior: smooth
   box-sizing: border-box
+  font-family: 'Roboto'
+  font-style: normal
 
 *,
 *:before,
@@ -23,8 +25,6 @@ body
   margin: auto
 
 .section-money__title
-  font-family: 'Roboto'
-  font-style: normal
   font-weight: 700
   font-size: 24px
   line-height: 28px
@@ -53,10 +53,8 @@ body
 
 .list__item:nth-of-type(1)
   background: linear-gradient(#6377E1 0%, #2920A5 100%) padding-box, linear-gradient(180deg, rgb(149, 162, 235), rgb(71, 94, 223)) border-box
-
 .list__item:nth-of-type(2)
   background: linear-gradient(#E163E1 0%, #741595 100%) padding-box, linear-gradient(180deg, rgb(235, 149, 235), rgb(177, 71, 223)) border-box
-  
 .list__item:nth-of-type(3)
   background: linear-gradient(#55CE00 0%, #014D1D 100%) padding-box, linear-gradient(180deg, rgb(140, 222, 83), rgb(58, 130, 7)) border-box
 
@@ -68,6 +66,44 @@ body
 .list__image
   position: absolute
   bottom: -56px
+
+.item-header
+  display: flex
+  align-items: center
+  gap: 16px
+  color: #FFFFFF
+  font-weight: 700
+  padding: 20px
+
+.item-header__number
+  display: block
+  border: 2px solid transparent
+  width: 48px
+  height: 48px
+  border-radius: 100px
+  font-size: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.item-header__number_color1
+  background: linear-gradient(#2920A5 0%, #6377E1 100%) padding-box, linear-gradient(180deg, rgb(43, 35, 166), rgb(146, 159, 233)) border-box
+.item-header__number_color2
+  background: linear-gradient(#741595 0%, #E163E1 100%) padding-box, linear-gradient(180deg, rgb(118, 23, 150), rgb(232, 146, 233)) border-box
+.item-header__number_color3
+  background: linear-gradient(#014D1D 0%, #55CE00 100%) padding-box, linear-gradient(180deg, rgb(7, 84, 32), rgb(138, 221, 81)) border-box
+  
+.item-header__text
+  display: block
+  font-size: 20px
+  line-height: 24px
+
+.item-header__text_width1
+  max-width: 210px
+.item-header__text_width2
+  max-width: 120px
+.item-header__text_width3
+  max-width: 290px
 
 *::-webkit-scrollbar
   width: 5px
