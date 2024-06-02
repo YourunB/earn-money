@@ -3,6 +3,7 @@ import './styles/index.sass';
 import './assets/images/card1.png';
 import './assets/images/card2.png';
 import './assets/images/card3.png';
+import './assets/images/arrow.svg';
 
 const main = document.createElement('main');
 main.classList.add('main');
@@ -14,9 +15,11 @@ sectionMoney.innerHTML = `
   <h3 class="section-money__title">Зарабатывайте вместе с нами!</h3>
   <ul class="list">
     <li class="list__item">
+      <img class="list__arrow" src="arrow.svg" alt="Arrow">
       <img class="list__image" src="card1.png" alt="Info">
     </li>
     <li class="list__item">
+      <img class="list__arrow" src="arrow.svg" alt="Arrow">
       <img class="list__image" src="card2.png" alt="Info">
     </li>
     <li class="list__item">
