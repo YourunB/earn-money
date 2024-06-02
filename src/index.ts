@@ -14,30 +14,30 @@ sectionMoney.innerHTML = `
   <h3 class="section-money__title">Зарабатывайте вместе с нами!</h3>
   <ul class="list">
     <li class="list__item">
+      <div class="card-header">
+        <span class="card-header__number card-header__number_color1">1</span>
+        <span class="card-header__text card-header__text_width1">Получите партнерскую ссылку</span>
+      </div>
       <div class="card">
-        <div class="card-header">
-          <span class="card-header__number card-header__number_color1">1</span>
-          <span class="card-header__text card-header__text_width1">Получите партнерскую ссылку</span>
-        </div>
         <img class="card__image" src="card1.png" alt="Info">
       </div>
     </li>
     <li class="list__item">
+      <div class="card-header">
+        <span class="card-header__number card-header__number_color2">2</span>
+        <span class="card-header__text card-header__text_width2">Расскажите о IIII.COM</span>
+      </div>
       <div class="card">
-        <div class="card-header">
-          <span class="card-header__number card-header__number_color2">2</span>
-          <span class="card-header__text card-header__text_width2">Расскажите о IIII.COM</span>
-        </div>
-        <img class="list__image" src="card2.png" alt="Info">
+        <img class="card__image" src="card2.png" alt="Info">
       </div>
     </li>
     <li class="list__item">
+      <div class="card-header">
+        <span class="card-header__number card-header__number_color3">3</span>
+        <span class="card-header__text card-header__text_width3">Получайте хороший процент от покупок по вашей ссылке!</span>
+      </div>
       <div class="card">
-        <div class="card-header">
-          <span class="card-header__number card-header__number_color3">3</span>
-          <span class="card-header__text card-header__text_width3">Получайте хороший процент от покупок по вашей ссылке!</span>
-        </div>
-        <img class="list__image" src="card3.png" alt="Info">
+        <img class="card__image" src="card3.png" alt="Info">
       </div>
     </li>
   </ul>

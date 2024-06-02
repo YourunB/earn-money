@@ -48,12 +48,13 @@ body
   position: relative
   width: 419px
   height: 352px
+  cursor: pointer
 
 .card
   position: relative
   border: 2px solid transparent
   border-radius: 20px
-  transition: 0.5s
+  transition: 0.2s
   width: 100%
   height: 100%
 
@@ -73,11 +74,15 @@ body
   top: 90px
   transition: 0.5s
 
-.list__image
+.card__image
   position: absolute
   bottom: -56px
+  width: 100%
 
 .card-header
+  position: absolute
+  top: 0
+  z-index: 10
   display: flex
   align-items: center
   gap: 16px
@@ -116,15 +121,21 @@ body
   max-width: 290px
 
 @media (hover: hover)
-  .card:hover
-    cursor: pointer
+  .list__item:hover .card
     border-width: 6px
+
+  .list__item:nth-child(1):hover .card-header__number
+    background: linear-gradient(#2920A5 0%, #657EFF 100%) padding-box, linear-gradient(180deg, rgb(42, 33, 166), rgb(149, 166, 254)) border-box
+  .list__item:nth-child(2):hover .card-header__number
+    background: linear-gradient(#741595 0%, #FC69FC 100%) padding-box, linear-gradient(180deg, rgb(118, 32, 150), rgb(252, 152, 252)) border-box
+  .list__item:nth-child(3):hover .card-header__number
+    background: linear-gradient(#014D1D 0%, #5DE101 100%) padding-box, linear-gradient(180deg, rgb(3, 79, 30), rgb(144, 234, 82)) border-box
   
-  .list__item:nth-child(1) .card:hover
+  .list__item:nth-child(1):hover .card
     background: linear-gradient(#657EFF 0%, #2920A5 100%) padding-box, linear-gradient(180deg, rgb(151, 167, 255), rgb(72, 96, 224)) border-box
-  .list__item:nth-child(2) .card:hover
+  .list__item:nth-child(2):hover .card
     background: linear-gradient(#FC69FC 0%, #741595 100%) padding-box, linear-gradient(180deg, rgb(253, 154, 253), rgb(178, 72, 223)) border-box
-  .list__item:nth-child(3) .card:hover
+  .list__item:nth-child(3):hover .card
     background: linear-gradient(#5DE101 0%, #014D1D 100%) padding-box, linear-gradient(180deg, rgb(145, 234, 83), rgb(59, 131, 8)) border-box
 
 *::-webkit-scrollbar
