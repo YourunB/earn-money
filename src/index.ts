@@ -3,6 +3,7 @@ import './styles/index.sass';
 import './assets/images/card1.png';
 import './assets/images/card2.png';
 import './assets/images/card3.png';
+import './assets/images/partner.svg';
 
 const main = document.createElement('main');
 main.classList.add('main');
@@ -41,6 +42,9 @@ sectionMoney.innerHTML = `
       </div>
     </li>
   </ul>
+  <div class="control-box">
+    <button class="btn"><img src="partner.svg" alt="Partner">Стать партнером</button>
+  </div>
 `;
 
 main.append(sectionMoney);
