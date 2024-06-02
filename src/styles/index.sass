@@ -17,15 +17,19 @@ body
 
 .main
   min-height: 100vh
-  width: 1920px
+  max-width: 1920px
+  width: 100%
   padding: 40px
   margin: auto
   display: flex
   justify-content: center
   align-items: center
+  overflow-x: hidden
 
 .section-money
   margin: auto
+  max-width: 1289px
+  width: 100%
 
 .section-money__title
   font-weight: 700
@@ -42,7 +46,6 @@ body
   list-style-type: none
   margin: 0
   padding: 4px
-  width: fit-content
   box-shadow: 0px 24px 48px rgba(23, 43, 151, 0.72)
   border: 4px solid transparent
   background: linear-gradient(rgba(107, 125, 222, 0.12) 0%, #2921A5 100%) padding-box, linear-gradient(180deg, rgb(202, 207, 239), rgb(106, 119, 195)) border-box
@@ -50,7 +53,8 @@ body
 
 .list__item
   position: relative
-  width: 419px
+  max-width: 419px
+  width: 100%
   height: 352px
   cursor: default
 
@@ -88,14 +92,13 @@ body
   top: 0
   z-index: 10
   display: flex
-  align-items: center
   gap: 16px
   color: #FFFFFF
   font-weight: 700
   padding: 20px
 
 .card-header__number
-  display: block
+  flex-shrink: 0
   border: 2px solid transparent
   width: 48px
   height: 48px
@@ -180,6 +183,44 @@ body
   background: linear-gradient(#51A814 0%, #368300 100%) padding-box, linear-gradient(360deg, rgb(100, 191, 37), rgb(113, 209,  46)) border-box
   border: 2px solid rgba(149, 255, 75, 0.48)
   box-shadow: 0px 0px 0px 4px rgba(91, 192, 20, 0.24), 0px 4px 8px rgba(61, 147, 0, 0.48)
+
+@media (max-width: 768px)
+  .main
+    padding: 36px 12px
+
+  .section-money__title
+    margin-left: 0
+    margin-bottom: 38px
+
+  .list
+    display: block
+    width: 336px
+    padding: 0
+    margin: auto
+
+  .list__item
+    width: 328px
+    height: 352px
+    margin-bottom: 8px
+
+  .card__image
+    width: 420px
+    left: -50px
+
+  .list__item:nth-of-type(1)::after,
+  .list__item:nth-of-type(2)::after
+    content: url('../assets/images/arrow-down.svg')
+    position: absolute
+    right: 0
+    top: 310px
+    transition: 0.5s
+
+  .control-box
+    margin-top: 58px
+    justify-content: center
+
+  .balance
+    display: none
 
 *::-webkit-scrollbar
   width: 5px
